@@ -1,0 +1,6 @@
+junk/
+__pycache__/
+test.py
+model-paper/
+memVer.py
+venv/
