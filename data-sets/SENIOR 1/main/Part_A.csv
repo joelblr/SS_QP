@@ -1,0 +1,50 @@
+ID,OT/NT,Chapter,PgNum,Question
+1,OT,5,36,Deuteronomy 7 : 26
+2,OT,10,71,Deuteronomy 22 : 5
+3,OT,3,"14,62",Psalms 1 : 1
+4,OT,3,"14,62",Psalms 1 : 2
+5,OT,13,101,Psalms 18 : 35
+6,OT,15,133,Psalms 20 : 6
+7,OT,13,96,Psalms 104 : 24
+8,OT,6,43,Psalms 119 : 9
+9,OT,"6,15","43,131",Psalms 119 : 11
+10,OT,12,94,Proverbs 31 : 4
+11,OT,12,94,Proverbs 31 : 5
+12,OT,14,105,Ecclesiastes 5 : 12
+13,OT,8,51,Isaiah 14 : 11
+14,OT,15,132,Isaiah 59 : 19
+15,OT,9,57,Jeremiah 9 : 24
+16,OT,12,88,Jeremiah 35 : 14
+17,OT,13,99,Daniel 2 : 47
+18,OT,7?,45?,Ezekiel 36 : 26
+19,OT,7,45,Ezekiel 36 : 27
+20,OT,12,90,Habakkuk 2 : 5
+21,NT,"2,10","8,69",Matthew 5 : 28
+22,NT,14,107,Luke 16 : 24
+23,NT,14,114,Acts 2 : 44
+24,NT,13,99,Romans 11 : 33
+25,NT,"3,15","20,128",Romans 12 : 1
+26,NT,11,80,1 Corinthians 3 : 17
+27,NT,"6,15","71,128",1 Corinthians 6 : 20
+28,NT,4,29,1 Corinthians 10 : 23
+29,NT,13,97,2 Corinthians 4 : 4
+30,NT,3,13,Galatians 1 : 3
+31,NT,3,13,Galatians 1 : 4
+32,NT,8,53,Galatians 5 : 19
+33,NT,8,53,Galatians 5 : 20
+34,NT,"8,15","53,129",Galatians 5 : 21
+35,NT,7,49,Colossians 1 : 21
+36,NT,7,49,Colossians 1 : 23
+37,NT,13,99,Colossians 2 : 3
+38,NT,15,130,Colossians 3 : 16
+39,NT,15,120,1 Thess 4 : 3
+40,NT,14,104,1 Timothy 6 : 10
+41,NT,2,6,2 Timothy 3 : 16
+42,NT,2,6,2 Timothy 3 : 17
+43,NT,1,1,Titus 2 : 12
+44,NT,1,1,Titus 2 : 13
+45,NT,3,18,James 4 : 4
+46,NT,10,68,1 Peter 3 : 3
+47,NT,10,68,1 Peter 3 : 4
+48,NT,9,63,1 Peter 5 : 8
+49,NT,15,131,2 Peter 1 : 4
