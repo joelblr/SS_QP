@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #00796b;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Styling */
+label i {
+    margin-right: 8px;
+    color: #00796b;
+}
+
+/* #cldr {
+    margin: 8px;
+} */
+
+/* Input Styling */
+input[type="text"], 
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+/* Input Focus Effect */
+input[type="text"]:focus, 
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+}
+
+/* Inline Input Containers */
+.chapters, .years {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Inline Elements */
+.chapters p,
+.years p {
+    margin: 0 10px;
+    color: #00796b;
+}
+
+/* Adjust Number Inputs in Line */
+.chapters input[type="number"] {
+    width: calc(50% - 45px); /* Ensures equal width for both inputs in a line */
+}
+.years input[type="number"] {
+    width: calc(50% - 65px); /* Ensures equal width for both inputs in a line */
+}
+
+/* Save-As Input */
+.save-as input[type="text"] {
+    width: 100%;
+}
+
+/* Submit Button Styling */
+.submit {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #004d40;
+    box-shadow: 0 4px 15px rgba(0, 121, 107, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .box {
+        padding: 15px;
+    }
+    label, input[type="text"], input[type="number"] {
+        font-size: 14px;
+    }
+    .submit {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .chapters, .years {
+        flex-direction: column;
+    }
+    .chapters input[type="number"], 
+    .years input[type="number"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
