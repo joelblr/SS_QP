@@ -132,8 +132,8 @@ def openDoc(relative_path, prefix_dir) :
 """ doc: DocxTemplate, folder_path: str, prefix_tpl: str -> str """
 def saveFile(doc, folder_path, prefix_tpl) :
 
-    # newfile = prefix_tpl + datetime.now().strftime("%S%M") + ".docx"
-    newfile = prefix_tpl + ".docx"
+    newfile = prefix_tpl + datetime.now().strftime("%H%M%S") + ".docx"
+    # newfile = prefix_tpl + ".docx"
     newfile = resource_path(rectifiedPath(folder_path, newfile))
 
     if not os.path.exists(folder_path) :
@@ -182,7 +182,7 @@ inputs = {
     "prefix_tpl" : input("Enter the Folder Name: ")+"_",
     "year" : "2025*",
     "standard" : "SENIOR 1",
-    "tpl" : "SS_Template2.docx",
+    "tpl" : "SS_Template.docx",
     "type" : "main",
     "saveas" : "",#as a separate dir for the test papers generated per one run
 }

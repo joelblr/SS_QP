@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunday School</title>
+    <link rel="icon" href="assets/cross-icon.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+    <script src="logic.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="box">
+      <form name="getData" action="." method="post">
+        <div class="std">
+          <label for="std"> <i class="fas fa-book"></i> Standard </label>
+          <input
+            type="text"
+            id="std"
+            name="std"
+            placeholder="e.g. 7, 8, 9"
+            required
+          />
+        </div>
+        <div class="chapters">
+          <label for="chap1">
+            <i class="fas fa-list-ol"></i> Chapters Range
+          </label>
+          <input
+            type="number"
+            id="chap1"
+            name="chap1"
+            min="1"
+            max="20"
+            placeholder="Start"
+            required
+          />
+          <p style="display: inline">to</p>
+          <input
+            type="number"
+            id="chap2"
+            name="chap2"
+            min="1"
+            max="20"
+            placeholder="End"
+            required
+          />
+        </div>
+        <div class="years">
+          <label for="yrs1">
+            <i class="fas fa-calendar-alt"></i> Years Range
+          </label>
+          <input
+            type="number"
+            id="yrs1"
+            name="yrs1"
+            min="2017"
+            max="2024"
+            placeholder="Start Year"
+            required
+          />
+          <p style="display: inline">to</p>
+          <input
+            type="number"
+            id="yrs2"
+            name="yrs2"
+            min="2017"
+            max="2024"
+            placeholder="End Year"
+            required
+          />
+        </div>
+        <div class="save-as">
+          <label for="save">
+            <i class="fas fa-save"></i> Save as @Downloads
+          </label>
+          <input
+            type="text"
+            id="save-as"
+            name="save-as"
+            placeholder="e.g. Model-Papers"
+            required
+          />
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
