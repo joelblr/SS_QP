@@ -4,6 +4,7 @@ test.py
 model-paper/
 memVer.py
 **/package-lock.json
+.uploads
 
 ## FLASK
 .idea/
