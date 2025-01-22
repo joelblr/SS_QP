@@ -3,7 +3,7 @@ junk/
 test.py
 model-paper/
 memVer.py
-package-lock.json
+**/package-lock.json
 
 ## FLASK
 .idea/
