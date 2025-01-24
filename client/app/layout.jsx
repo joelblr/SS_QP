@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 
 // Components
 import Navbar from "./components/Navbar";
-import Sidebar, { SidebarItem } from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 
 
 const geistSans = Geist({
@@ -29,27 +29,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ToastContainer />
+        <ToastContainer newestOnTop />
         <div className="flex">
           <Sidebar />
           <div className="flex flex-col flex-grow">
             <Navbar />
-            <main className="flex-grow p-4">{children}</main>
+            <main className="flex-grow p-4">
+              {children}
+            </main>
           </div>
         </div>
       </body>
     </html>
   );
 }
-
-// position="bottom-right"
-// autoClose={3000}
-// hideProgressBar={false}
-// newestOnTop
-// closeOnClick={false}
-// rtl={false}
-// pauseOnFocusLoss
-// draggable
-// pauseOnHover
-// theme="colored"
-// transition={Flip}

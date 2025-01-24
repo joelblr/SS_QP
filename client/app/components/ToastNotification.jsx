@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { toast } from "react-toastify";
-import { Flip, Zoom, Bounce } from "react-toastify"; // Import transitions
+import { Flip, Zoom, Bounce } from "react-toastify";
 
 export default function ToastNotification({ type = "info", message, onClose, timeout = 3000 }) {
   useEffect(() => {
@@ -22,11 +22,11 @@ export default function ToastNotification({ type = "info", message, onClose, tim
       // Show the toast based on the type
       showToast(type, message, styles);
 
-      // Close manually if `onClose` is provided
-      if (onClose) {
-        const timer = setTimeout(onClose, timeout || 3000);
-        return () => clearTimeout(timer); // Cleanup on unmount
-      }
+      // // Close manually if `onClose` is provided
+      // if (onClose) {
+      //   const timer = setTimeout(onClose, timeout || 3000);
+      //   return () => clearTimeout(timer); // Cleanup on unmount
+      // }
     }
   }, [message, timeout, onClose, type]);
 

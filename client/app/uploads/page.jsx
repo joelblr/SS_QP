@@ -1,7 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+// User-Components
 import UploadBtn from './UploadBtn';
+
 
 export default function FileDropzone() {
   const [files, setFiles] = useState([]);
@@ -25,8 +29,12 @@ export default function FileDropzone() {
     setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
   };
 
+  const handleUploadSuccess = () => {
+    setFiles([]); // Clear the files list on successful upload
+  };
+
   return (
-    <div>
+    <div className="h-full flex flex-col bg-gray-100">
       <div
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
@@ -50,6 +58,7 @@ export default function FileDropzone() {
             />
           </label>
         </div>
+
         {files.length > 0 && (
           <ul className="mt-4">
             {files.map((file, index) => (
@@ -69,7 +78,8 @@ export default function FileDropzone() {
           </ul>
         )}
       </div>
-      <UploadBtn files={files} />
+
+      <UploadBtn files={files} onUploadSuccess={handleUploadSuccess} />
     </div>
   );
 }
