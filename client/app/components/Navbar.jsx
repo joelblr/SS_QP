@@ -20,6 +20,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-2 bg-gray-100 p-2 rounded-md">
         <Search size={20} className="text-gray-500" />
         <input
+          name="search-bar"
           type="text"
           placeholder="Search..."
           className="bg-transparent outline-none text-gray-700 placeholder-gray-400 w-64"

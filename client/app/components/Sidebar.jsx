@@ -35,8 +35,8 @@ export default function Sidebar() {
   }, [router]); // Listen to route changes
 
   const handleOptionClick = (menu) => {
-    setSelectedProduct(menu.id); // Highlight the selected product
-    router.push(menu.link); // Navigate to the selected page
+    setSelectedProduct(menu.id);
+    router.push(menu.link);
   };
 
 
@@ -46,7 +46,6 @@ export default function Sidebar() {
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
-            // src="https://img.logoipsum.com/243.svg"
             src="https://sample-papers.com/assets/uploads/logo/joblal.png"
             className={`overflow-hidden transition-all ${expanded ? "w-13 h-12" : "w-0"
               }`}
@@ -87,7 +86,7 @@ export default function Sidebar() {
             className="w-10 h-10 rounded-md"
           />
           <div className={`flex justify-between items-center
-              overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0"}
+              transition-all ${expanded ? "w-52 ml-3" : "w-0 overflow-hidden"}
           `}
           >
             <div className="leading-4">
@@ -110,7 +109,7 @@ export function SidebarItem({ icon, text, active, alert, pathLink, trigger }) {
     <Link href={pathLink} onClick={trigger}>
       <li
         className={`
-        relative flex items-center py-2 px-3 my-1
+        relative flex items-center py-2 px-3 my-2
         font-medium rounded-md cursor-pointer
         transition-colors group
         ${active
@@ -121,7 +120,7 @@ export function SidebarItem({ icon, text, active, alert, pathLink, trigger }) {
       >
         {icon}
         <span
-          className={`overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0"
+          className={`overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0 h-0 invisible"
             }`}
         >
           {text}
@@ -137,10 +136,10 @@ export function SidebarItem({ icon, text, active, alert, pathLink, trigger }) {
           <div
             className={`
           absolute left-full rounded-md px-2 py-1 ml-6
-          bg-indigo-100 text-indigo-800 text-sm
+          whitespace-nowrap bg-indigo-100 text-indigo-800 text-sm
           invisible opacity-20 -translate-x-3 transition-all
           group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
-      `}
+            `}
           >
             {text}
           </div>

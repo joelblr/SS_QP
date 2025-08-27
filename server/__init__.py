@@ -8,7 +8,7 @@ def create_server():
     # Enable CORS for all routes and all origins
     CORS(server)
     # CORS(app, resources={r"/pdf_upload": {"origins": "http://localhost:3000"}})
-    server.register_blueprint(Upload_Route.upload_router, url_prefix="/pdf_upload")
+    server.register_blueprint(Upload_Route.upload_router, url_prefix="/api/docword")
 
 
     return server
